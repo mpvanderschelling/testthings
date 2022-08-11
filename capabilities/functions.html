@@ -96,12 +96,12 @@
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h2>
 <div class="section" id="creating-the-function">
 <h3>Creating the function<a class="headerlink" href="#creating-the-function" title="Permalink to this headline"></a></h3>
-<p>First we make a 2-dimensional continous design space with the helper function <a class="reference internal" href="../source/f3dasm.base.html#f3dasm.base.utils.make_nd_continuous_design" title="f3dasm.base.utils.make_nd_continuous_design"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_nd_continuous_design()</span></code></a>:</p>
+<p>First we make a 2-dimensional continous design space with the helper function <code class="xref py py-func docutils literal notranslate"><span class="pre">make_nd_continuous_design()</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bounds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]])</span>
 <span class="n">design</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">make_nd_continuous_design</span><span class="p">(</span><span class="n">bounds</span><span class="o">=</span><span class="n">bounds</span><span class="p">,</span> <span class="n">dimensions</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Then we create an object of the <code class="xref py py-class docutils literal notranslate"><span class="pre">Sphere</span></code> class, specifying the <a class="reference internal" href="../source/f3dasm.base.html#f3dasm.base.function.Function.dimensionality" title="f3dasm.base.function.Function.dimensionality"><code class="xref py py-attr docutils literal notranslate"><span class="pre">dimensionality</span></code></a>:</p>
+<p>Then we create an object of the <code class="xref py py-class docutils literal notranslate"><span class="pre">Sphere</span></code> class, specifying the <code class="xref py py-attr docutils literal notranslate"><span class="pre">dimensionality</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sphere_function</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">functions</span><span class="o">.</span><span class="n">Sphere</span><span class="p">(</span><span class="n">dimensionality</span><span class="o">=</span><span class="n">dim</span><span class="p">,</span> <span class="n">scale_bounds</span><span class="o">=</span><span class="n">bounds</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -117,7 +117,7 @@
 </div>
 <div class="section" id="gradient">
 <h3>Gradient<a class="headerlink" href="#gradient" title="Permalink to this headline"></a></h3>
-<p>The gradient of a function can be estimated by calling the <a class="reference internal" href="../source/f3dasm.base.html#f3dasm.base.function.Function.dfdx" title="f3dasm.base.function.Function.dfdx"><code class="xref py py-func docutils literal notranslate"><span class="pre">dfdx()</span></code></a> function:</p>
+<p>The gradient of a function can be estimated by calling the <code class="xref py py-func docutils literal notranslate"><span class="pre">dfdx()</span></code> function:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sphere_function</span><span class="o">.</span><span class="n">dfdx</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="gp">... </span><span class="n">array</span><span class="p">([[</span><span class="mf">26.2144</span> <span class="p">,</span> <span class="mf">41.94304</span><span class="p">]])</span>
 </pre></div>
