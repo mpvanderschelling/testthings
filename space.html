@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design space &mdash; testthings v0.0.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Samplers" href="capabilities/samplers.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> testthings
+          </a>
+              <div class="version">
+                v0.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capabilities/algorithms.html">Optimizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capabilities/functions.html">Benchmark functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capabilities/samplers.html">Samplers</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Design space</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-parameters">Creating parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-the-design-space">Creating the design space</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#helper-function-for-single-objective-n-dimensional-continuous-design-spaces">Helper function for single-objective, n-dimensional continuous design spaces</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">testthings</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Design space</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/space.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="design-space">
+<h1>Design space<a class="headerlink" href="#design-space" title="Permalink to this headline"></a></h1>
+<p>The design space can be created with the <code class="xref py py-class docutils literal notranslate"><span class="pre">DesignSpace</span></code> class.</p>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h2>
+<div class="section" id="creating-parameters">
+<h3>Creating parameters<a class="headerlink" href="#creating-parameters" title="Permalink to this headline"></a></h3>
+<p>There are three types of parameters that can be created: continous, discrete and categorical:</p>
+<ul class="simple">
+<li><p>We can create <strong>continous</strong> parameters with a <code class="xref py py-attr docutils literal notranslate"><span class="pre">lower_bound</span></code> and <code class="xref py py-attr docutils literal notranslate"><span class="pre">upper_bound</span></code> with the <code class="xref py py-class docutils literal notranslate"><span class="pre">ContinuousParameter</span></code> class</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x1</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">ContinuousParameter</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;x1&#39;</span><span class="p">,</span> <span class="n">lower_bound</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mf">100.0</span><span class="p">)</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">ContinuousParameter</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;x2&#39;</span><span class="p">,</span> <span class="n">lower_bound</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mf">4.0</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">ContinuousParameter</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span> <span class="c1"># the default bounds are -np.inf, np.inf</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>We can create <strong>discrete</strong> parameters with a <code class="xref py py-attr docutils literal notranslate"><span class="pre">lower_bound</span></code> and <code class="xref py py-attr docutils literal notranslate"><span class="pre">upper_bound</span></code> with the <code class="xref py py-class docutils literal notranslate"><span class="pre">DiscreteParameter</span></code> class</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x3</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">DiscreteParameter</span><span class="p">(</span><span class="s1">&#39;x3&#39;</span><span class="p">,</span> <span class="n">lower_bound</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">x4</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">DiscreteParameter</span><span class="p">(</span><span class="s1">&#39;x4&#39;</span><span class="p">,</span> <span class="n">lower_bound</span><span class="o">=</span><span class="mi">74</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mi">99</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>We can create <strong>categorical</strong> parameters with a list of strings (<code class="xref py py-attr docutils literal notranslate"><span class="pre">categories</span></code>) with the <code class="xref py py-attr docutils literal notranslate"><span class="pre">CategoricalParameter</span></code> class</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x5</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">CategoricalParameter</span><span class="p">(</span><span class="s1">&#39;x5&#39;</span><span class="p">,</span> <span class="n">categories</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;test1&#39;</span><span class="p">,</span><span class="s1">&#39;test2&#39;</span><span class="p">,</span><span class="s1">&#39;test3&#39;</span><span class="p">,</span><span class="s1">&#39;test4&#39;</span><span class="p">])</span>
+<span class="n">x6</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">CategoricalParameter</span><span class="p">(</span><span class="s1">&#39;x6&#39;</span><span class="p">,</span> <span class="n">categories</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;material1&#39;</span><span class="p">,</span><span class="s1">&#39;material2&#39;</span><span class="p">,</span><span class="s1">&#39;material3&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="creating-the-design-space">
+<h3>Creating the design space<a class="headerlink" href="#creating-the-design-space" title="Permalink to this headline"></a></h3>
+<p>The design space is then constructed by calling the <code class="xref py py-class docutils literal notranslate"><span class="pre">DesignSpace</span></code> class and providing:
+* a list of input parameters (<code class="xref py py-attr docutils literal notranslate"><span class="pre">input_space</span></code>)
+* a list of output parameters (<code class="xref py py-attr docutils literal notranslate"><span class="pre">output_space</span></code>):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">design</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">DesignSpace</span><span class="p">(</span><span class="n">input_space</span><span class="o">=</span><span class="p">[</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span><span class="p">,</span> <span class="n">x4</span><span class="p">,</span> <span class="n">x5</span><span class="p">,</span> <span class="n">x6</span><span class="p">],</span> <span class="n">output_space</span><span class="o">=</span><span class="p">[</span><span class="n">y</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="helper-function-for-single-objective-n-dimensional-continuous-design-spaces">
+<h3>Helper function for single-objective, n-dimensional continuous design spaces<a class="headerlink" href="#helper-function-for-single-objective-n-dimensional-continuous-design-spaces" title="Permalink to this headline"></a></h3>
+<p>We can make a n-dimensional continous, single-objective design space with the helper function <code class="xref py py-func docutils literal notranslate"><span class="pre">make_nd_continuous_design()</span></code>. We have to specify the boundaries for each of the dimensions with a numpy array:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bounds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]])</span>
+<span class="n">design</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">make_nd_continuous_design</span><span class="p">(</span><span class="n">bounds</span><span class="o">=</span><span class="n">bounds</span><span class="p">,</span> <span class="n">dimensions</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="capabilities/samplers.html" class="btn btn-neutral float-left" title="Samplers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Martin van der Schelling.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
