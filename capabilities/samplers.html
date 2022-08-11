@@ -81,16 +81,16 @@
 <h1>Samplers<a class="headerlink" href="#samplers" title="Permalink to this headline"></a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h2>
-<p>We have to give initialize each sampler with a <code class="xref py py-class docutils literal notranslate"><span class="pre">DesignSpace</span></code>:</p>
+<p>We have to give initialize each sampler with a <a class="reference internal" href="../source/f3dasm.base.html#f3dasm.base.design.DesignSpace" title="f3dasm.base.design.DesignSpace"><code class="xref py py-class docutils literal notranslate"><span class="pre">DesignSpace</span></code></a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ran</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">sampling</span><span class="o">.</span><span class="n">RandomUniformSampling</span><span class="p">(</span><span class="n">doe</span><span class="o">=</span><span class="n">design</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Then we can evoke sampling by calling the <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_samples()</span></code> method:</p>
+<p>Then we can evoke sampling by calling the <a class="reference internal" href="../source/f3dasm.base.html#f3dasm.base.samplingmethod.SamplingInterface.get_samples" title="f3dasm.base.samplingmethod.SamplingInterface.get_samples"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_samples()</span></code></a> method:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1"># Number of samples</span>
 <span class="n">data_ran</span> <span class="o">=</span> <span class="n">ran</span><span class="o">.</span><span class="n">get_samples</span><span class="p">(</span><span class="n">numsamples</span><span class="o">=</span><span class="n">N</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>This will return a <code class="xref py py-class docutils literal notranslate"><span class="pre">Data</span></code> object filled with the requested samples.</p>
+<p>This will return a <a class="reference internal" href="../source/f3dasm.base.html#f3dasm.base.data.Data" title="f3dasm.base.data.Data"><code class="xref py py-class docutils literal notranslate"><span class="pre">Data</span></code></a> object filled with the requested samples.</p>
 </div>
 <div class="section" id="implement-your-own-sampler">
 <h2>Implement your own sampler<a class="headerlink" href="#implement-your-own-sampler" title="Permalink to this headline"></a></h2>
