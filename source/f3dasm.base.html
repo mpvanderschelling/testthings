@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>f3dasm.base package &mdash; testthings v0.0.1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <title>f3dasm.base package &mdash; testthings v0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
@@ -37,7 +40,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../gettingstarted.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../capabilities/algorithms.html">Optimizers</a></li>
@@ -70,36 +73,866 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="f3dasm-base-package">
-<h1>f3dasm.base package<a class="headerlink" href="#f3dasm-base-package" title="Permalink to this headline"></a></h1>
-<div class="section" id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
-</div>
-<div class="section" id="f3dasm-base-data-module">
-<h2>f3dasm.base.data module<a class="headerlink" href="#f3dasm-base-data-module" title="Permalink to this headline"></a></h2>
-</div>
-<div class="section" id="f3dasm-base-design-module">
-<h2>f3dasm.base.design module<a class="headerlink" href="#f3dasm-base-design-module" title="Permalink to this headline"></a></h2>
-</div>
-<div class="section" id="f3dasm-base-function-module">
-<h2>f3dasm.base.function module<a class="headerlink" href="#f3dasm-base-function-module" title="Permalink to this headline"></a></h2>
-</div>
-<div class="section" id="f3dasm-base-optimization-module">
-<h2>f3dasm.base.optimization module<a class="headerlink" href="#f3dasm-base-optimization-module" title="Permalink to this headline"></a></h2>
-</div>
-<div class="section" id="f3dasm-base-samplingmethod-module">
-<h2>f3dasm.base.samplingmethod module<a class="headerlink" href="#f3dasm-base-samplingmethod-module" title="Permalink to this headline"></a></h2>
-</div>
-<div class="section" id="f3dasm-base-space-module">
-<h2>f3dasm.base.space module<a class="headerlink" href="#f3dasm-base-space-module" title="Permalink to this headline"></a></h2>
-</div>
-<div class="section" id="f3dasm-base-utils-module">
-<h2>f3dasm.base.utils module<a class="headerlink" href="#f3dasm-base-utils-module" title="Permalink to this headline"></a></h2>
-</div>
-<div class="section" id="module-f3dasm.base">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-f3dasm.base" title="Permalink to this headline"></a></h2>
-</div>
-</div>
+  <section id="f3dasm-base-package">
+<h1>f3dasm.base package<a class="headerlink" href="#f3dasm-base-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-f3dasm.base.data">
+<span id="f3dasm-base-data-module"></span><h2>f3dasm.base.data module<a class="headerlink" href="#module-f3dasm.base.data" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="f3dasm.base.data.Data">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.base.data.</span></span><span class="sig-name descname"><span class="pre">Data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">designspace</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#f3dasm.base.design.DesignSpace" title="f3dasm.base.design.DesignSpace"><span class="pre">DesignSpace</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.base.data.Data" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class that contains data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>DataFrame</em>) – data stored in a DataFrame</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.data.Data.add">
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.data.Data.add" title="Permalink to this definition"></a></dt>
+<dd><p>Add data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>pd.DataFrame</em>) – data to append</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.data.Data.add_numpy_arrays">
+<span class="sig-name descname"><span class="pre">add_numpy_arrays</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.data.Data.add_numpy_arrays" title="Permalink to this definition"></a></dt>
+<dd><p>Append a numpy array to the dataframe</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input</strong> (<em>np.ndarray</em>) – 2d numpy array added to input data</p></li>
+<li><p><strong>output</strong> (<em>np.ndarray</em>) – 2d numpy array added to output data</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.data.Data.add_output">
+<span class="sig-name descname"><span class="pre">add_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.data.Data.add_output" title="Permalink to this definition"></a></dt>
+<dd><p>Add a numpy array to the output column of the dataframe</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output</strong> (<em>np.ndarray</em>) – Output data</p></li>
+<li><p><strong>label</strong> (<em>str</em>) – label of the output column to add to</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.data.Data.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DataFrame</span></em><a class="headerlink" href="#f3dasm.base.data.Data.data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.data.Data.designspace">
+<span class="sig-name descname"><span class="pre">designspace</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#f3dasm.base.design.DesignSpace" title="f3dasm.base.design.DesignSpace"><span class="pre">DesignSpace</span></a></em><a class="headerlink" href="#f3dasm.base.data.Data.designspace" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.data.Data.get_input_data">
+<span class="sig-name descname"><span class="pre">get_input_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#f3dasm.base.data.Data.get_input_data" title="Permalink to this definition"></a></dt>
+<dd><p>Get the input data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>DataFrame containing only the input data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.data.Data.get_n_best_input_parameters_numpy">
+<span class="sig-name descname"><span class="pre">get_n_best_input_parameters_numpy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nosamples</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#f3dasm.base.data.Data.get_n_best_input_parameters_numpy" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the input vectors in numpy array format of the n best samples</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>nosamples</strong> (<em>int</em>) – number of samples</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>numpy array containing the n best input parameters</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.data.Data.get_n_best_output_samples">
+<span class="sig-name descname"><span class="pre">get_n_best_output_samples</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nosamples</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#f3dasm.base.data.Data.get_n_best_output_samples" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the n lowest rows of the dataframe. Values are compared to the output columns</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>nosamples</strong> (<em>int</em>) – number of samples</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>DataFrame containing the n best samples</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.data.Data.get_number_of_datapoints">
+<span class="sig-name descname"><span class="pre">get_number_of_datapoints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#f3dasm.base.data.Data.get_number_of_datapoints" title="Permalink to this definition"></a></dt>
+<dd><p>Get the total number of datapoints</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>total number of datapoints</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.data.Data.get_output_data">
+<span class="sig-name descname"><span class="pre">get_output_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#f3dasm.base.data.Data.get_output_data" title="Permalink to this definition"></a></dt>
+<dd><p>Get the output data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>DataFrame containing only the output data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.data.Data.plot">
+<span class="sig-name descname"><span class="pre">plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_par1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_par2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.data.Data.plot" title="Permalink to this definition"></a></dt>
+<dd><p>Plot the data of two parameters in a figure</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_par1</strong> (<em>str</em>) – name of first parameter (x-axis)</p></li>
+<li><p><strong>input_par2</strong> (<em>str</em>) – name of second parameter (x-axis)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.data.Data.plot_pairs">
+<span class="sig-name descname"><span class="pre">plot_pairs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.base.data.Data.plot_pairs" title="Permalink to this definition"></a></dt>
+<dd><p>Plot a matrix of 2D plots that visualize the spread of the samples for each dimension.
+Requires seaborn to be installed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.data.Data.reset_data">
+<span class="sig-name descname"><span class="pre">reset_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.data.Data.reset_data" title="Permalink to this definition"></a></dt>
+<dd><p>Reset the dataframe to an empty dataframe with the appropriate input and output columns</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.data.Data.show">
+<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.data.Data.show" title="Permalink to this definition"></a></dt>
+<dd><p>Print the data to the console</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-f3dasm.base.design">
+<span id="f3dasm-base-design-module"></span><h2>f3dasm.base.design module<a class="headerlink" href="#module-f3dasm.base.design" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.base.design.</span></span><span class="sig-name descname"><span class="pre">DesignSpace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_space:</span> <span class="pre">~typing.List[~f3dasm.base.space.ParameterInterface]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_space:</span> <span class="pre">~typing.List[~f3dasm.base.space.ParameterInterface]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.base.design.DesignSpace" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Main clas for the design of experiments</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_space</strong> (<em>List[SpaceInterface]</em>) – list of parameters</p></li>
+<li><p><strong>output_space</strong> (<em>List[SpaceInterface]</em>) – list of parameters</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.add_input_space">
+<span class="sig-name descname"><span class="pre">add_input_space</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">space</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#f3dasm.base.space.ParameterInterface" title="f3dasm.base.space.ParameterInterface"><span class="pre">ParameterInterface</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.add_input_space" title="Permalink to this definition"></a></dt>
+<dd><p>Add a new parameter to the searchspace</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>space</strong> (<em>SpaceInterface</em>) – search space parameter to be added</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.add_output_space">
+<span class="sig-name descname"><span class="pre">add_output_space</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">space</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#f3dasm.base.space.ParameterInterface" title="f3dasm.base.space.ParameterInterface"><span class="pre">ParameterInterface</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.add_output_space" title="Permalink to this definition"></a></dt>
+<dd><p>Add a new parameter to the searchspace</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>space</strong> (<em>SpaceInterface</em>) – search space parameter to be added</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.get_categorical_input_names">
+<span class="sig-name descname"><span class="pre">get_categorical_input_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.get_categorical_input_names" title="Permalink to this definition"></a></dt>
+<dd><p>Receive the names of the categorical input parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of names of categorical input parameters</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.get_categorical_input_parameters">
+<span class="sig-name descname"><span class="pre">get_categorical_input_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#f3dasm.base.space.CategoricalParameter" title="f3dasm.base.space.CategoricalParameter"><span class="pre">CategoricalParameter</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.get_categorical_input_parameters" title="Permalink to this definition"></a></dt>
+<dd><p>Obtain all the categorical input parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>space of categorical input parameters</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[CategoricalSpace]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.get_continuous_input_names">
+<span class="sig-name descname"><span class="pre">get_continuous_input_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.get_continuous_input_names" title="Permalink to this definition"></a></dt>
+<dd><p>Receive the continuous parameter names of the input space”</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of names of the continuous input parameters</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.get_continuous_input_parameters">
+<span class="sig-name descname"><span class="pre">get_continuous_input_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#f3dasm.base.space.ContinuousParameter" title="f3dasm.base.space.ContinuousParameter"><span class="pre">ContinuousParameter</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.get_continuous_input_parameters" title="Permalink to this definition"></a></dt>
+<dd><p>Obtain all the continuous parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>space of continuous parameters</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[ContinuousSpace]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.get_discrete_input_names">
+<span class="sig-name descname"><span class="pre">get_discrete_input_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.get_discrete_input_names" title="Permalink to this definition"></a></dt>
+<dd><p>Receive the names of all the discrete parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of names</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.get_discrete_input_parameters">
+<span class="sig-name descname"><span class="pre">get_discrete_input_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#f3dasm.base.space.DiscreteParameter" title="f3dasm.base.space.DiscreteParameter"><span class="pre">DiscreteParameter</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.get_discrete_input_parameters" title="Permalink to this definition"></a></dt>
+<dd><p>Obtain all the discrete parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>space of discrete parameters</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[DiscreteSpace]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.get_empty_dataframe">
+<span class="sig-name descname"><span class="pre">get_empty_dataframe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.get_empty_dataframe" title="Permalink to this definition"></a></dt>
+<dd><p>Create an empty DataFrame with the information of the input and output space</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>DataFrame containing “input” and “output” columns</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.get_input_names">
+<span class="sig-name descname"><span class="pre">get_input_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.get_input_names" title="Permalink to this definition"></a></dt>
+<dd><p>Get the names of the input parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>List of the names of the input parameters</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.get_input_space">
+<span class="sig-name descname"><span class="pre">get_input_space</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#f3dasm.base.space.ParameterInterface" title="f3dasm.base.space.ParameterInterface"><span class="pre">ParameterInterface</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.get_input_space" title="Permalink to this definition"></a></dt>
+<dd><p>Get the input space</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>List of input parameters</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[<a class="reference internal" href="#f3dasm.base.space.ParameterInterface" title="f3dasm.base.space.ParameterInterface">ParameterInterface</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.get_number_of_input_parameters">
+<span class="sig-name descname"><span class="pre">get_number_of_input_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.get_number_of_input_parameters" title="Permalink to this definition"></a></dt>
+<dd><p>Obtain the number of input parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>number of input parameters</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.get_number_of_output_parameters">
+<span class="sig-name descname"><span class="pre">get_number_of_output_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.get_number_of_output_parameters" title="Permalink to this definition"></a></dt>
+<dd><p>Obtain the number of input parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>number of output parameters</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.get_output_names">
+<span class="sig-name descname"><span class="pre">get_output_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.get_output_names" title="Permalink to this definition"></a></dt>
+<dd><p>Get the names of the output parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>List of the names of the output parameters</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.get_output_space">
+<span class="sig-name descname"><span class="pre">get_output_space</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#f3dasm.base.space.ParameterInterface" title="f3dasm.base.space.ParameterInterface"><span class="pre">ParameterInterface</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.get_output_space" title="Permalink to this definition"></a></dt>
+<dd><p>Get the output space</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>List of output parameters</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[<a class="reference internal" href="#f3dasm.base.space.ParameterInterface" title="f3dasm.base.space.ParameterInterface">ParameterInterface</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.input_space">
+<span class="sig-name descname"><span class="pre">input_space</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#f3dasm.base.space.ParameterInterface" title="f3dasm.base.space.ParameterInterface"><span class="pre">ParameterInterface</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#f3dasm.base.design.DesignSpace.input_space" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.is_single_objective_continuous">
+<span class="sig-name descname"><span class="pre">is_single_objective_continuous</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#f3dasm.base.design.DesignSpace.is_single_objective_continuous" title="Permalink to this definition"></a></dt>
+<dd><p>Check if the output is single objective and continuous</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>boolean value if the above described condition is true</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.design.DesignSpace.output_space">
+<span class="sig-name descname"><span class="pre">output_space</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#f3dasm.base.space.ParameterInterface" title="f3dasm.base.space.ParameterInterface"><span class="pre">ParameterInterface</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#f3dasm.base.design.DesignSpace.output_space" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-f3dasm.base.function">
+<span id="f3dasm-base-function-module"></span><h2>f3dasm.base.function module<a class="headerlink" href="#module-f3dasm.base.function" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="f3dasm.base.function.Function">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.base.function.</span></span><span class="sig-name descname"><span class="pre">Function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">noise</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimensionality</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale_bounds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([[0.,</span> <span class="pre">1.],</span> <span class="pre">[0.,</span> <span class="pre">1.]])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_domain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([[0.,</span> <span class="pre">1.],</span> <span class="pre">[0.,</span> <span class="pre">1.]])</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.base.function.Function" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Interface of a continuous benchmark function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>noise</strong> (<em>bool</em>) – inflict Gaussian noise on the output.</p></li>
+<li><p><strong>seed</strong> (<em>Any|int</em>) – value to seed the random generator (Default = None).</p></li>
+<li><p><strong>dimensionality</strong> (<em>int</em>) – input dimension</p></li>
+<li><p><strong>scale_bounds</strong> (<em>Any|List[float]</em>) – array containing the lower and upper bound of the scaling factor of the input data (Default = [0.0, 1.0])</p></li>
+<li><p><strong>input_domain</strong> (<em>np.ndarray</em>) – array containing the lower and upper bound of the input domain of the original function (Default = [0.0, 1.0])</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.function.Function.check_if_within_bounds">
+<span class="sig-name descname"><span class="pre">check_if_within_bounds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#f3dasm.base.function.Function.check_if_within_bounds" title="Permalink to this definition"></a></dt>
+<dd><p>Check if the input vector is between the given scaling bounds</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>np.ndarray</em>) – input vector</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>whether the vector is within the boundaries</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.function.Function.dfdx">
+<span class="sig-name descname"><span class="pre">dfdx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#f3dasm.base.function.Function.dfdx" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the gradient at a particular point in space. Gradient is computed by numdifftools.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>np.ndarray</em>) – input vector</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>gradient</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.function.Function.dimensionality">
+<span class="sig-name descname"><span class="pre">dimensionality</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#f3dasm.base.function.Function.dimensionality" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.function.Function.f">
+<span class="sig-name descname"><span class="pre">f</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#f3dasm.base.function.Function.f" title="Permalink to this definition"></a></dt>
+<dd><p>Analytical function of the objective function. Needs to be implemented by inhereted class</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.function.Function.input_domain">
+<span class="sig-name descname"><span class="pre">input_domain</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">array([[0.,</span> <span class="pre">1.],</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">[0.,</span> <span class="pre">1.]])</span></em><a class="headerlink" href="#f3dasm.base.function.Function.input_domain" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.function.Function.noise">
+<span class="sig-name descname"><span class="pre">noise</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#f3dasm.base.function.Function.noise" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.function.Function.plot">
+<span class="sig-name descname"><span class="pre">plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">orientation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'3D'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">px</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">300</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([[0.,</span> <span class="pre">1.],</span> <span class="pre">[0.,</span> <span class="pre">1.]])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.base.function.Function.plot" title="Permalink to this definition"></a></dt>
+<dd><p>Generate a surface plot, either 2D or 3D, of the function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>orientation</strong> (<em>str, optional</em>) – Either “2D” or “3D” orientation. Defaults to “3D”.</p></li>
+<li><p><strong>px</strong> (<em>int, optional</em>) – Number of points per dimension. Defaults to 300.</p></li>
+<li><p><strong>domain</strong> (<em>List, optional</em>) – Domain that needs to be plotted . Defaults to [0, 1].</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Figure and axis</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>fig, ax</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.function.Function.plot_data">
+<span class="sig-name descname"><span class="pre">plot_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#f3dasm.base.data.Data" title="f3dasm.base.data.Data"><span class="pre">Data</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">px</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">300</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([[0.,</span> <span class="pre">1.],</span> <span class="pre">[0.,</span> <span class="pre">1.]])</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.base.function.Function.plot_data" title="Permalink to this definition"></a></dt>
+<dd><p>Create a 2D contour plot with the datapoints as scatter</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>Data</em>) – Data object containing samples</p></li>
+<li><p><strong>px</strong> (<em>int, optional</em>) – Number of pixels on each axis. Defaults to 300.</p></li>
+<li><p><strong>domain</strong> (<em>np.ndarray, optional</em>) – Domain that needs to be plotted. Defaults to np.tile([0.0, 1.0], (2, 1)).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>_description_</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>_type_</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.function.Function.scale_bounds">
+<span class="sig-name descname"><span class="pre">scale_bounds</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">array([[0.,</span> <span class="pre">1.],</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">[0.,</span> <span class="pre">1.]])</span></em><a class="headerlink" href="#f3dasm.base.function.Function.scale_bounds" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.function.Function.seed">
+<span class="sig-name descname"><span class="pre">seed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#f3dasm.base.function.Function.seed" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.function.Function.set_seed">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">set_seed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seed</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.function.Function.set_seed" title="Permalink to this definition"></a></dt>
+<dd><p>Set the numpy seed of the random generator</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-f3dasm.base.optimization">
+<span id="f3dasm-base-optimization-module"></span><h2>f3dasm.base.optimization module<a class="headerlink" href="#module-f3dasm.base.optimization" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.base.optimization.</span></span><span class="sig-name descname"><span class="pre">Optimizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data:</span> <span class="pre">~f3dasm.base.data.Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hyperparameters:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">79307</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaults:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.base.optimization.Optimizer" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Mainclass to inherit from to implement optimization algorithms</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>Data</em>) – Data-object</p></li>
+<li><p><strong>hyperparamaters</strong> (<em>dict</em>) – Dictionary with hyperparamaters (default is None)</p></li>
+<li><p><strong>seed</strong> (<em>int</em>) – seed to set the optimizer</p></li>
+<li><p><strong>defaults</strong> (<em>dict</em>) – Default hyperparameter arguments</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.algorithm">
+<span class="sig-name descname"><span class="pre">algorithm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.algorithm" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#f3dasm.base.data.Data" title="f3dasm.base.data.Data"><span class="pre">Data</span></a></em><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.defaults">
+<span class="sig-name descname"><span class="pre">defaults</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.defaults" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.extract_data">
+<span class="sig-name descname"><span class="pre">extract_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#f3dasm.base.data.Data" title="f3dasm.base.data.Data"><span class="pre">Data</span></a></span></span><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.extract_data" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a copy of the data</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.hyperparameters">
+<span class="sig-name descname"><span class="pre">hyperparameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.hyperparameters" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.init_parameters">
+<span class="sig-name descname"><span class="pre">init_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.init_parameters" title="Permalink to this definition"></a></dt>
+<dd><p>Set the initialization parameters. This could be dynamic or static hyperparameters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.iterate">
+<span class="sig-name descname"><span class="pre">iterate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#f3dasm.base.function.Function" title="f3dasm.base.function.Function"><span class="pre">Function</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.iterate" title="Permalink to this definition"></a></dt>
+<dd><p>Calls the update_step function multiple times.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>iterations</strong> (<em>int</em>) – number of iterations</p></li>
+<li><p><strong>function</strong> (<em>Function</em>) – Objective function to evaluate</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.seed">
+<span class="sig-name descname"><span class="pre">seed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">79307</span></em><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.seed" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.set_algorithm">
+<span class="sig-name descname"><span class="pre">set_algorithm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.set_algorithm" title="Permalink to this definition"></a></dt>
+<dd><p>If necessary, the algorithm needs to be set</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.set_data">
+<span class="sig-name descname"><span class="pre">set_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#f3dasm.base.data.Data" title="f3dasm.base.data.Data"><span class="pre">Data</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.set_data" title="Permalink to this definition"></a></dt>
+<dd><p>Set the data attribute</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>Data</em>) – Data object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.set_hyperparameters">
+<span class="sig-name descname"><span class="pre">set_hyperparameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.set_hyperparameters" title="Permalink to this definition"></a></dt>
+<dd><p>Overwrite the default hyperparameters by the given ones</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.set_seed">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">set_seed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.set_seed" title="Permalink to this definition"></a></dt>
+<dd><p>Set the seed of the optimizer. Needs to be inherited.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.update_step">
+<span class="sig-name descname"><span class="pre">update_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#f3dasm.base.function.Function" title="f3dasm.base.function.Function"><span class="pre">Function</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.update_step" title="Permalink to this definition"></a></dt>
+<dd><p>One iteration of the algorithm. Adds the new input vector and resulting output immediately to the data attribute</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>function</strong> (<em>Function</em>) – Objective function to evaluate</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-f3dasm.base.samplingmethod">
+<span id="f3dasm-base-samplingmethod-module"></span><h2>f3dasm.base.samplingmethod module<a class="headerlink" href="#module-f3dasm.base.samplingmethod" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="f3dasm.base.samplingmethod.SamplingInterface">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.base.samplingmethod.</span></span><span class="sig-name descname"><span class="pre">SamplingInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doe</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#f3dasm.base.design.DesignSpace" title="f3dasm.base.design.DesignSpace"><span class="pre">DesignSpace</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.base.samplingmethod.SamplingInterface" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Interface for sampling method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>doe</strong> (<em>DoE</em>) – design of experiments object</p></li>
+<li><p><strong>seed</strong> (<em>Any</em>) – Optional: seed for sampling (default is None)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.samplingmethod.SamplingInterface.doe">
+<span class="sig-name descname"><span class="pre">doe</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#f3dasm.base.design.DesignSpace" title="f3dasm.base.design.DesignSpace"><span class="pre">DesignSpace</span></a></em><a class="headerlink" href="#f3dasm.base.samplingmethod.SamplingInterface.doe" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.samplingmethod.SamplingInterface.get_samples">
+<span class="sig-name descname"><span class="pre">get_samples</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numsamples</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#f3dasm.base.data.Data" title="f3dasm.base.data.Data"><span class="pre">Data</span></a></span></span><a class="headerlink" href="#f3dasm.base.samplingmethod.SamplingInterface.get_samples" title="Permalink to this definition"></a></dt>
+<dd><p>Receive samples of the search space</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>numsamples</strong> (<em>int</em>) – number of samples</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Data objects with the samples</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#f3dasm.base.data.Data" title="f3dasm.base.data.Data">Data</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.samplingmethod.SamplingInterface.sample_continuous">
+<span class="sig-name descname"><span class="pre">sample_continuous</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numsamples</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#f3dasm.base.samplingmethod.SamplingInterface.sample_continuous" title="Permalink to this definition"></a></dt>
+<dd><p>Create N samples within the search space</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numsamples</strong> (<em>int</em>) – number of samples</p></li>
+<li><p><strong>dimensions</strong> (<em>int</em>) – number of dimensions</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>samples</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>np.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.samplingmethod.SamplingInterface.seed">
+<span class="sig-name descname"><span class="pre">seed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#f3dasm.base.samplingmethod.SamplingInterface.seed" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.base.samplingmethod.SamplingInterface.set_seed">
+<span class="sig-name descname"><span class="pre">set_seed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.samplingmethod.SamplingInterface.set_seed" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-f3dasm.base.space">
+<span id="f3dasm-base-space-module"></span><h2>f3dasm.base.space module<a class="headerlink" href="#module-f3dasm.base.space" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="f3dasm.base.space.CategoricalParameter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.base.space.</span></span><span class="sig-name descname"><span class="pre">CategoricalParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">categories</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.base.space.CategoricalParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#f3dasm.base.space.ParameterInterface" title="f3dasm.base.space.ParameterInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParameterInterface</span></code></a></p>
+<p>Creates a search space parameter that is categorical</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>categories</strong> (<em>list</em>) – list of strings that represent available categories</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.space.CategoricalParameter.categories">
+<span class="sig-name descname"><span class="pre">categories</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#f3dasm.base.space.CategoricalParameter.categories" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.space.CategoricalParameter.type">
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'category'</span></em><a class="headerlink" href="#f3dasm.base.space.CategoricalParameter.type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f3dasm.base.space.ConstraintInterface">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.base.space.</span></span><span class="sig-name descname"><span class="pre">ConstraintInterface</span></span><a class="headerlink" href="#f3dasm.base.space.ConstraintInterface" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Interface for constraints</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f3dasm.base.space.ContinuousParameter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.base.space.</span></span><span class="sig-name descname"><span class="pre">ContinuousParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lower_bound</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">-inf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">upper_bound</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">inf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.base.space.ContinuousParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#f3dasm.base.space.ParameterInterface" title="f3dasm.base.space.ParameterInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParameterInterface</span></code></a></p>
+<p>Creates a search space parameter that is continuous</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lower_bound</strong> (<em>float</em>) – lower bound of continuous search space</p></li>
+<li><p><strong>upper_bound</strong> (<em>float</em>) – upper bound of continuous search space (exclusive)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.space.ContinuousParameter.lower_bound">
+<span class="sig-name descname"><span class="pre">lower_bound</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">-inf</span></em><a class="headerlink" href="#f3dasm.base.space.ContinuousParameter.lower_bound" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.space.ContinuousParameter.type">
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'float'</span></em><a class="headerlink" href="#f3dasm.base.space.ContinuousParameter.type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.space.ContinuousParameter.upper_bound">
+<span class="sig-name descname"><span class="pre">upper_bound</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">inf</span></em><a class="headerlink" href="#f3dasm.base.space.ContinuousParameter.upper_bound" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f3dasm.base.space.DiscreteParameter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.base.space.</span></span><span class="sig-name descname"><span class="pre">DiscreteParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lower_bound</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">upper_bound</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.base.space.DiscreteParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#f3dasm.base.space.ParameterInterface" title="f3dasm.base.space.ParameterInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParameterInterface</span></code></a></p>
+<p>Creates a search space parameter that is discrete</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lower_bound</strong> (<em>int</em>) – lower bound of discrete search space</p></li>
+<li><p><strong>upper_bound</strong> (<em>int</em>) – upper bound of discrete search space (exclusive)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.space.DiscreteParameter.lower_bound">
+<span class="sig-name descname"><span class="pre">lower_bound</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#f3dasm.base.space.DiscreteParameter.lower_bound" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.space.DiscreteParameter.type">
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'int'</span></em><a class="headerlink" href="#f3dasm.base.space.DiscreteParameter.type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.space.DiscreteParameter.upper_bound">
+<span class="sig-name descname"><span class="pre">upper_bound</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#f3dasm.base.space.DiscreteParameter.upper_bound" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f3dasm.base.space.ParameterInterface">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.base.space.</span></span><span class="sig-name descname"><span class="pre">ParameterInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.base.space.ParameterInterface" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Interface class of a search space parameter</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – name of the parameter</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.base.space.ParameterInterface.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#f3dasm.base.space.ParameterInterface.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-f3dasm.base.utils">
+<span id="f3dasm-base-utils-module"></span><h2>f3dasm.base.utils module<a class="headerlink" href="#module-f3dasm.base.utils" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="f3dasm.base.utils.make_nd_continuous_design">
+<span class="sig-prename descclassname"><span class="pre">f3dasm.base.utils.</span></span><span class="sig-name descname"><span class="pre">make_nd_continuous_design</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bounds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimensions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.base.utils.make_nd_continuous_design" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-f3dasm.base">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-f3dasm.base" title="Permalink to this heading"></a></h2>
+</section>
+</section>
 
 
            </div>

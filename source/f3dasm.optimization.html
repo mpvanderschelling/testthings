@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>f3dasm.optimization package &mdash; testthings v0.0.1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <title>f3dasm.optimization package &mdash; testthings v0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
@@ -37,7 +40,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../gettingstarted.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../capabilities/algorithms.html">Optimizers</a></li>
@@ -70,27 +73,247 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="f3dasm-optimization-package">
-<h1>f3dasm.optimization package<a class="headerlink" href="#f3dasm-optimization-package" title="Permalink to this headline"></a></h1>
-<div class="section" id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
-</div>
-<div class="section" id="f3dasm-optimization-gpyopt-implementations-module">
-<h2>f3dasm.optimization.gpyopt_implementations module<a class="headerlink" href="#f3dasm-optimization-gpyopt-implementations-module" title="Permalink to this headline"></a></h2>
-</div>
-<div class="section" id="f3dasm-optimization-gradient-based-algorithms-module">
-<h2>f3dasm.optimization.gradient_based_algorithms module<a class="headerlink" href="#f3dasm-optimization-gradient-based-algorithms-module" title="Permalink to this headline"></a></h2>
-</div>
-<div class="section" id="f3dasm-optimization-pygmo-implementations-module">
-<h2>f3dasm.optimization.pygmo_implementations module<a class="headerlink" href="#f3dasm-optimization-pygmo-implementations-module" title="Permalink to this headline"></a></h2>
-</div>
-<div class="section" id="f3dasm-optimization-scipy-implementations-module">
-<h2>f3dasm.optimization.scipy_implementations module<a class="headerlink" href="#f3dasm-optimization-scipy-implementations-module" title="Permalink to this headline"></a></h2>
-</div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline"></a></h2>
-</div>
-</div>
+  <section id="f3dasm-optimization-package">
+<h1>f3dasm.optimization package<a class="headerlink" href="#f3dasm-optimization-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-f3dasm.optimization.gpyopt_implementations">
+<span id="f3dasm-optimization-gpyopt-implementations-module"></span><h2>f3dasm.optimization.gpyopt_implementations module<a class="headerlink" href="#module-f3dasm.optimization.gpyopt_implementations" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="f3dasm.optimization.gpyopt_implementations.BayesianOptimization">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.optimization.gpyopt_implementations.</span></span><span class="sig-name descname"><span class="pre">BayesianOptimization</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data:</span> <span class="pre">~f3dasm.base.data.Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hyperparameters:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">79307</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaults:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.optimization.gpyopt_implementations.BayesianOptimization" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="f3dasm.base.html#f3dasm.base.optimization.Optimizer" title="f3dasm.base.optimization.Optimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Optimizer</span></code></a></p>
+<p>Bayesian Optimization implementation from the GPyOPt library</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gpyopt_implementations.BayesianOptimization.algorithm">
+<span class="sig-name descname"><span class="pre">algorithm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#f3dasm.optimization.gpyopt_implementations.BayesianOptimization.algorithm" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gpyopt_implementations.BayesianOptimization.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="f3dasm.base.html#f3dasm.base.data.Data" title="f3dasm.base.data.Data"><span class="pre">Data</span></a></em><a class="headerlink" href="#f3dasm.optimization.gpyopt_implementations.BayesianOptimization.data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gpyopt_implementations.BayesianOptimization.defaults">
+<span class="sig-name descname"><span class="pre">defaults</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#f3dasm.optimization.gpyopt_implementations.BayesianOptimization.defaults" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gpyopt_implementations.BayesianOptimization.hyperparameters">
+<span class="sig-name descname"><span class="pre">hyperparameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#f3dasm.optimization.gpyopt_implementations.BayesianOptimization.hyperparameters" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.optimization.gpyopt_implementations.BayesianOptimization.init_parameters">
+<span class="sig-name descname"><span class="pre">init_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.optimization.gpyopt_implementations.BayesianOptimization.init_parameters" title="Permalink to this definition"></a></dt>
+<dd><p>Set the initialization parameters. This could be dynamic or static hyperparameters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.optimization.gpyopt_implementations.BayesianOptimization.set_algorithm">
+<span class="sig-name descname"><span class="pre">set_algorithm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.optimization.gpyopt_implementations.BayesianOptimization.set_algorithm" title="Permalink to this definition"></a></dt>
+<dd><p>If necessary, the algorithm needs to be set</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.optimization.gpyopt_implementations.BayesianOptimization.update_step">
+<span class="sig-name descname"><span class="pre">update_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="f3dasm.base.html#f3dasm.base.function.Function" title="f3dasm.base.function.Function"><span class="pre">Function</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.optimization.gpyopt_implementations.BayesianOptimization.update_step" title="Permalink to this definition"></a></dt>
+<dd><p>One iteration of the algorithm. Adds the new input vector and resulting output immediately to the data attribute</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>function</strong> (<em>Function</em>) – Objective function to evaluate</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-f3dasm.optimization.gradient_based_algorithms">
+<span id="f3dasm-optimization-gradient-based-algorithms-module"></span><h2>f3dasm.optimization.gradient_based_algorithms module<a class="headerlink" href="#module-f3dasm.optimization.gradient_based_algorithms" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.Adam">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.optimization.gradient_based_algorithms.</span></span><span class="sig-name descname"><span class="pre">Adam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data:</span> <span class="pre">~f3dasm.base.data.Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hyperparameters:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">79307</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaults:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.Adam" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="f3dasm.base.html#f3dasm.base.optimization.Optimizer" title="f3dasm.base.optimization.Optimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Optimizer</span></code></a></p>
+<p>Gradient-based Adam optimizer</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.Adam.algorithm">
+<span class="sig-name descname"><span class="pre">algorithm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.Adam.algorithm" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.Adam.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="f3dasm.base.html#f3dasm.base.data.Data" title="f3dasm.base.data.Data"><span class="pre">Data</span></a></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.Adam.data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.Adam.defaults">
+<span class="sig-name descname"><span class="pre">defaults</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.Adam.defaults" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.Adam.hyperparameters">
+<span class="sig-name descname"><span class="pre">hyperparameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.Adam.hyperparameters" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.Adam.init_parameters">
+<span class="sig-name descname"><span class="pre">init_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.Adam.init_parameters" title="Permalink to this definition"></a></dt>
+<dd><p>Set the initialization parameters. This could be dynamic or static hyperparameters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.Adam.update_step">
+<span class="sig-name descname"><span class="pre">update_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="f3dasm.base.html#f3dasm.base.function.Function" title="f3dasm.base.function.Function"><span class="pre">Function</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.Adam.update_step" title="Permalink to this definition"></a></dt>
+<dd><p>One iteration of the algorithm. Adds the new input vector and resulting output immediately to the data attribute</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>function</strong> (<em>Function</em>) – Objective function to evaluate</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.Momentum">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.optimization.gradient_based_algorithms.</span></span><span class="sig-name descname"><span class="pre">Momentum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data:</span> <span class="pre">~f3dasm.base.data.Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hyperparameters:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">79307</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaults:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.Momentum" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="f3dasm.base.html#f3dasm.base.optimization.Optimizer" title="f3dasm.base.optimization.Optimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Optimizer</span></code></a></p>
+<p>Gradient-based Momentum optimizer</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.Momentum.algorithm">
+<span class="sig-name descname"><span class="pre">algorithm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.Momentum.algorithm" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.Momentum.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="f3dasm.base.html#f3dasm.base.data.Data" title="f3dasm.base.data.Data"><span class="pre">Data</span></a></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.Momentum.data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.Momentum.defaults">
+<span class="sig-name descname"><span class="pre">defaults</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.Momentum.defaults" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.Momentum.hyperparameters">
+<span class="sig-name descname"><span class="pre">hyperparameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.Momentum.hyperparameters" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.Momentum.init_parameters">
+<span class="sig-name descname"><span class="pre">init_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.Momentum.init_parameters" title="Permalink to this definition"></a></dt>
+<dd><p>Set the initialization parameters. This could be dynamic or static hyperparameters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.Momentum.update_step">
+<span class="sig-name descname"><span class="pre">update_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="f3dasm.base.html#f3dasm.base.function.Function" title="f3dasm.base.function.Function"><span class="pre">Function</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.Momentum.update_step" title="Permalink to this definition"></a></dt>
+<dd><p>One iteration of the algorithm. Adds the new input vector and resulting output immediately to the data attribute</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>function</strong> (<em>Function</em>) – Objective function to evaluate</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.RandomSearch">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.optimization.gradient_based_algorithms.</span></span><span class="sig-name descname"><span class="pre">RandomSearch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data:</span> <span class="pre">~f3dasm.base.data.Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hyperparameters:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">79307</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaults:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.RandomSearch" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="f3dasm.base.html#f3dasm.base.optimization.Optimizer" title="f3dasm.base.optimization.Optimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Optimizer</span></code></a></p>
+<p>Naive random search</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.RandomSearch.algorithm">
+<span class="sig-name descname"><span class="pre">algorithm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.RandomSearch.algorithm" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.RandomSearch.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="f3dasm.base.html#f3dasm.base.data.Data" title="f3dasm.base.data.Data"><span class="pre">Data</span></a></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.RandomSearch.data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.RandomSearch.defaults">
+<span class="sig-name descname"><span class="pre">defaults</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.RandomSearch.defaults" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.RandomSearch.hyperparameters">
+<span class="sig-name descname"><span class="pre">hyperparameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.RandomSearch.hyperparameters" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.RandomSearch.update_step">
+<span class="sig-name descname"><span class="pre">update_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="f3dasm.base.html#f3dasm.base.function.Function" title="f3dasm.base.function.Function"><span class="pre">Function</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.RandomSearch.update_step" title="Permalink to this definition"></a></dt>
+<dd><p>One iteration of the algorithm. Adds the new input vector and resulting output immediately to the data attribute</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>function</strong> (<em>Function</em>) – Objective function to evaluate</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.SGD">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.optimization.gradient_based_algorithms.</span></span><span class="sig-name descname"><span class="pre">SGD</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data:</span> <span class="pre">~f3dasm.base.data.Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hyperparameters:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">79307</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaults:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.SGD" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="f3dasm.base.html#f3dasm.base.optimization.Optimizer" title="f3dasm.base.optimization.Optimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Optimizer</span></code></a></p>
+<p>Gradient-based Stochastig Gradient Descent (SGD) optimizer</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.SGD.algorithm">
+<span class="sig-name descname"><span class="pre">algorithm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.SGD.algorithm" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.SGD.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="f3dasm.base.html#f3dasm.base.data.Data" title="f3dasm.base.data.Data"><span class="pre">Data</span></a></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.SGD.data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.SGD.defaults">
+<span class="sig-name descname"><span class="pre">defaults</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.SGD.defaults" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.SGD.hyperparameters">
+<span class="sig-name descname"><span class="pre">hyperparameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.SGD.hyperparameters" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.SGD.init_parameters">
+<span class="sig-name descname"><span class="pre">init_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.SGD.init_parameters" title="Permalink to this definition"></a></dt>
+<dd><p>Set the initialization parameters. This could be dynamic or static hyperparameters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f3dasm.optimization.gradient_based_algorithms.SGD.update_step">
+<span class="sig-name descname"><span class="pre">update_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="f3dasm.base.html#f3dasm.base.function.Function" title="f3dasm.base.function.Function"><span class="pre">Function</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.optimization.gradient_based_algorithms.SGD.update_step" title="Permalink to this definition"></a></dt>
+<dd><p>One iteration of the algorithm. Adds the new input vector and resulting output immediately to the data attribute</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>function</strong> (<em>Function</em>) – Objective function to evaluate</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="f3dasm-optimization-pygmo-implementations-module">
+<h2>f3dasm.optimization.pygmo_implementations module<a class="headerlink" href="#f3dasm-optimization-pygmo-implementations-module" title="Permalink to this heading"></a></h2>
+</section>
+<section id="f3dasm-optimization-scipy-implementations-module">
+<h2>f3dasm.optimization.scipy_implementations module<a class="headerlink" href="#f3dasm-optimization-scipy-implementations-module" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-contents">
+<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this heading"></a></h2>
+</section>
+</section>
 
 
            </div>

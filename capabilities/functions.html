@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Benchmark functions &mdash; testthings v0.0.1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <title>Benchmark functions &mdash; testthings v0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -39,7 +42,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../gettingstarted.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="algorithms.html">Optimizers</a></li>
@@ -90,42 +93,42 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="benchmark-functions">
-<h1>Benchmark functions<a class="headerlink" href="#benchmark-functions" title="Permalink to this headline"></a></h1>
-<div class="section" id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h2>
-<div class="section" id="creating-the-function">
-<h3>Creating the function<a class="headerlink" href="#creating-the-function" title="Permalink to this headline"></a></h3>
-<p>First we make a 2-dimensional continous design space with the helper function <code class="xref py py-func docutils literal notranslate"><span class="pre">make_nd_continuous_design()</span></code>:</p>
+  <section id="benchmark-functions">
+<h1>Benchmark functions<a class="headerlink" href="#benchmark-functions" title="Permalink to this heading"></a></h1>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h2>
+<section id="creating-the-function">
+<h3>Creating the function<a class="headerlink" href="#creating-the-function" title="Permalink to this heading"></a></h3>
+<p>First we make a 2-dimensional continous design space with the helper function <a class="reference internal" href="../source/f3dasm.base.html#f3dasm.base.utils.make_nd_continuous_design" title="f3dasm.base.utils.make_nd_continuous_design"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_nd_continuous_design()</span></code></a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bounds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]])</span>
 <span class="n">design</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">make_nd_continuous_design</span><span class="p">(</span><span class="n">bounds</span><span class="o">=</span><span class="n">bounds</span><span class="p">,</span> <span class="n">dimensions</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Then we create an object of the <code class="xref py py-class docutils literal notranslate"><span class="pre">Sphere</span></code> class, specifying the <code class="xref py py-attr docutils literal notranslate"><span class="pre">dimensionality</span></code>:</p>
+<p>Then we create an object of the <code class="xref py py-class docutils literal notranslate"><span class="pre">Sphere</span></code> class, specifying the <a class="reference internal" href="../source/f3dasm.base.html#f3dasm.base.function.Function.dimensionality" title="f3dasm.base.function.Function.dimensionality"><code class="xref py py-attr docutils literal notranslate"><span class="pre">dimensionality</span></code></a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sphere_function</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">functions</span><span class="o">.</span><span class="n">Sphere</span><span class="p">(</span><span class="n">dimensionality</span><span class="o">=</span><span class="n">dim</span><span class="p">,</span> <span class="n">scale_bounds</span><span class="o">=</span><span class="n">bounds</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="evaluating-the-function">
-<h3>Evaluating the function<a class="headerlink" href="#evaluating-the-function" title="Permalink to this headline"></a></h3>
+</section>
+<section id="evaluating-the-function">
+<h3>Evaluating the function<a class="headerlink" href="#evaluating-the-function" title="Permalink to this heading"></a></h3>
 <p>The function can be evaluated by directly calling the object</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">])</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">sphere_function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="o">...</span> <span class="n">array</span><span class="p">([[</span><span class="mf">23.330816</span><span class="p">]])</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="gradient">
-<h3>Gradient<a class="headerlink" href="#gradient" title="Permalink to this headline"></a></h3>
-<p>The gradient of a function can be estimated by calling the <code class="xref py py-func docutils literal notranslate"><span class="pre">dfdx()</span></code> function:</p>
+</section>
+<section id="gradient">
+<h3>Gradient<a class="headerlink" href="#gradient" title="Permalink to this heading"></a></h3>
+<p>The gradient of a function can be estimated by calling the <a class="reference internal" href="../source/f3dasm.base.html#f3dasm.base.function.Function.dfdx" title="f3dasm.base.function.Function.dfdx"><code class="xref py py-func docutils literal notranslate"><span class="pre">dfdx()</span></code></a> function:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sphere_function</span><span class="o">.</span><span class="n">dfdx</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="gp">... </span><span class="n">array</span><span class="p">([[</span><span class="mf">26.2144</span> <span class="p">,</span> <span class="mf">41.94304</span><span class="p">]])</span>
 </pre></div>
 </div>
 <p>The gradient is estimated using the numdifftools package.</p>
-</div>
-<div class="section" id="plotting">
-<h3>Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline"></a></h3>
+</section>
+<section id="plotting">
+<h3>Plotting<a class="headerlink" href="#plotting" title="Permalink to this heading"></a></h3>
 <p>We can plot a 3D or 2D representation of the loss landscape:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sphere_function</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">orientation</span><span class="o">=</span><span class="s2">&quot;3D&quot;</span><span class="p">,</span> <span class="n">domain</span><span class="o">=</span><span class="n">bounds</span><span class="p">)</span>
 </pre></div>
@@ -135,17 +138,17 @@
 </pre></div>
 </div>
 <p>img</p>
-</div>
-</div>
-<div class="section" id="implement-your-own-benchmark-functions">
-<h2>Implement your own benchmark functions<a class="headerlink" href="#implement-your-own-benchmark-functions" title="Permalink to this headline"></a></h2>
-</div>
-<div class="section" id="implemented-benchmark-functions">
-<h2>Implemented benchmark functions<a class="headerlink" href="#implemented-benchmark-functions" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+<section id="implement-your-own-benchmark-functions">
+<h2>Implement your own benchmark functions<a class="headerlink" href="#implement-your-own-benchmark-functions" title="Permalink to this heading"></a></h2>
+</section>
+<section id="implemented-benchmark-functions">
+<h2>Implemented benchmark functions<a class="headerlink" href="#implemented-benchmark-functions" title="Permalink to this heading"></a></h2>
 <p>The following implementations of benchmark functions can found under the <code class="xref py py-mod docutils literal notranslate"><span class="pre">f3dasm.functions</span></code> module.
 These are taken and modified from the <a class="reference external" href="https://github.com/AxelThevenot/Python_Benchmark_Test_Optimization_Function_Single_Objective">Python Benchmark Test Optimization Function Single Objective</a> github repository.</p>
-<div class="section" id="convex-functions">
-<h3>Convex functions<a class="headerlink" href="#convex-functions" title="Permalink to this headline"></a></h3>
+<section id="convex-functions">
+<h3>Convex functions<a class="headerlink" href="#convex-functions" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 26%" />
@@ -228,9 +231,9 @@ These are taken and modified from the <a class="reference external" href="https:
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="seperable-functions">
-<h3>Seperable functions<a class="headerlink" href="#seperable-functions" title="Permalink to this headline"></a></h3>
+</section>
+<section id="seperable-functions">
+<h3>Seperable functions<a class="headerlink" href="#seperable-functions" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 26%" />
@@ -307,9 +310,9 @@ These are taken and modified from the <a class="reference external" href="https:
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="differentiable-functions">
-<h3>Differentiable functions<a class="headerlink" href="#differentiable-functions" title="Permalink to this headline"></a></h3>
+</section>
+<section id="differentiable-functions">
+<h3>Differentiable functions<a class="headerlink" href="#differentiable-functions" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 26%" />
@@ -500,9 +503,9 @@ These are taken and modified from the <a class="reference external" href="https:
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="multimodal-functions">
-<h3>Multimodal functions<a class="headerlink" href="#multimodal-functions" title="Permalink to this headline"></a></h3>
+</section>
+<section id="multimodal-functions">
+<h3>Multimodal functions<a class="headerlink" href="#multimodal-functions" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 26%" />
@@ -648,9 +651,9 @@ These are taken and modified from the <a class="reference external" href="https:
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="functions-including-a-randomized-term">
-<h3>Functions including a randomized term<a class="headerlink" href="#functions-including-a-randomized-term" title="Permalink to this headline"></a></h3>
+</section>
+<section id="functions-including-a-randomized-term">
+<h3>Functions including a randomized term<a class="headerlink" href="#functions-including-a-randomized-term" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 26%" />
@@ -670,9 +673,9 @@ These are taken and modified from the <a class="reference external" href="https:
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>

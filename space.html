@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Design space &mdash; testthings v0.0.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <title>Design space &mdash; testthings v0.0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -38,7 +41,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="capabilities/algorithms.html">Optimizers</a></li>
@@ -79,16 +82,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="design-space">
-<h1>Design space<a class="headerlink" href="#design-space" title="Permalink to this headline"></a></h1>
-<p>The design space can be created with the <code class="xref py py-class docutils literal notranslate"><span class="pre">DesignSpace</span></code> class.</p>
-<div class="section" id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h2>
-<div class="section" id="creating-parameters">
-<h3>Creating parameters<a class="headerlink" href="#creating-parameters" title="Permalink to this headline"></a></h3>
+  <section id="design-space">
+<h1>Design space<a class="headerlink" href="#design-space" title="Permalink to this heading"></a></h1>
+<p>The design space can be created with the <a class="reference internal" href="source/f3dasm.base.html#f3dasm.base.design.DesignSpace" title="f3dasm.base.design.DesignSpace"><code class="xref py py-class docutils literal notranslate"><span class="pre">DesignSpace</span></code></a> class.</p>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h2>
+<section id="creating-parameters">
+<h3>Creating parameters<a class="headerlink" href="#creating-parameters" title="Permalink to this heading"></a></h3>
 <p>There are three types of parameters that can be created: continous, discrete and categorical:</p>
 <ul class="simple">
-<li><p>We can create <strong>continous</strong> parameters with a <code class="xref py py-attr docutils literal notranslate"><span class="pre">lower_bound</span></code> and <code class="xref py py-attr docutils literal notranslate"><span class="pre">upper_bound</span></code> with the <code class="xref py py-class docutils literal notranslate"><span class="pre">ContinuousParameter</span></code> class</p></li>
+<li><p>We can create <strong>continous</strong> parameters with a <a class="reference internal" href="source/f3dasm.base.html#f3dasm.base.space.ContinuousParameter.lower_bound" title="f3dasm.base.space.ContinuousParameter.lower_bound"><code class="xref py py-attr docutils literal notranslate"><span class="pre">lower_bound</span></code></a> and <a class="reference internal" href="source/f3dasm.base.html#f3dasm.base.space.ContinuousParameter.upper_bound" title="f3dasm.base.space.ContinuousParameter.upper_bound"><code class="xref py py-attr docutils literal notranslate"><span class="pre">upper_bound</span></code></a> with the <a class="reference internal" href="source/f3dasm.base.html#f3dasm.base.space.ContinuousParameter" title="f3dasm.base.space.ContinuousParameter"><code class="xref py py-class docutils literal notranslate"><span class="pre">ContinuousParameter</span></code></a> class</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x1</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">ContinuousParameter</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;x1&#39;</span><span class="p">,</span> <span class="n">lower_bound</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mf">100.0</span><span class="p">)</span>
 <span class="n">x2</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">ContinuousParameter</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;x2&#39;</span><span class="p">,</span> <span class="n">lower_bound</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mf">4.0</span><span class="p">)</span>
@@ -96,39 +99,39 @@
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>We can create <strong>discrete</strong> parameters with a <code class="xref py py-attr docutils literal notranslate"><span class="pre">lower_bound</span></code> and <code class="xref py py-attr docutils literal notranslate"><span class="pre">upper_bound</span></code> with the <code class="xref py py-class docutils literal notranslate"><span class="pre">DiscreteParameter</span></code> class</p></li>
+<li><p>We can create <strong>discrete</strong> parameters with a <a class="reference internal" href="source/f3dasm.base.html#f3dasm.base.space.DiscreteParameter.lower_bound" title="f3dasm.base.space.DiscreteParameter.lower_bound"><code class="xref py py-attr docutils literal notranslate"><span class="pre">lower_bound</span></code></a> and <a class="reference internal" href="source/f3dasm.base.html#f3dasm.base.space.DiscreteParameter.upper_bound" title="f3dasm.base.space.DiscreteParameter.upper_bound"><code class="xref py py-attr docutils literal notranslate"><span class="pre">upper_bound</span></code></a> with the <a class="reference internal" href="source/f3dasm.base.html#f3dasm.base.space.DiscreteParameter" title="f3dasm.base.space.DiscreteParameter"><code class="xref py py-class docutils literal notranslate"><span class="pre">DiscreteParameter</span></code></a> class</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x3</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">DiscreteParameter</span><span class="p">(</span><span class="s1">&#39;x3&#39;</span><span class="p">,</span> <span class="n">lower_bound</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 <span class="n">x4</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">DiscreteParameter</span><span class="p">(</span><span class="s1">&#39;x4&#39;</span><span class="p">,</span> <span class="n">lower_bound</span><span class="o">=</span><span class="mi">74</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mi">99</span><span class="p">)</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>We can create <strong>categorical</strong> parameters with a list of strings (<code class="xref py py-attr docutils literal notranslate"><span class="pre">categories</span></code>) with the <code class="xref py py-attr docutils literal notranslate"><span class="pre">CategoricalParameter</span></code> class</p></li>
+<li><p>We can create <strong>categorical</strong> parameters with a list of strings (<a class="reference internal" href="source/f3dasm.base.html#f3dasm.base.space.CategoricalParameter.categories" title="f3dasm.base.space.CategoricalParameter.categories"><code class="xref py py-attr docutils literal notranslate"><span class="pre">categories</span></code></a>) with the <a class="reference internal" href="source/f3dasm.base.html#f3dasm.base.space.CategoricalParameter" title="f3dasm.base.space.CategoricalParameter"><code class="xref py py-attr docutils literal notranslate"><span class="pre">CategoricalParameter</span></code></a> class</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x5</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">CategoricalParameter</span><span class="p">(</span><span class="s1">&#39;x5&#39;</span><span class="p">,</span> <span class="n">categories</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;test1&#39;</span><span class="p">,</span><span class="s1">&#39;test2&#39;</span><span class="p">,</span><span class="s1">&#39;test3&#39;</span><span class="p">,</span><span class="s1">&#39;test4&#39;</span><span class="p">])</span>
 <span class="n">x6</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">CategoricalParameter</span><span class="p">(</span><span class="s1">&#39;x6&#39;</span><span class="p">,</span> <span class="n">categories</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;material1&#39;</span><span class="p">,</span><span class="s1">&#39;material2&#39;</span><span class="p">,</span><span class="s1">&#39;material3&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="creating-the-design-space">
-<h3>Creating the design space<a class="headerlink" href="#creating-the-design-space" title="Permalink to this headline"></a></h3>
-<p>The design space is then constructed by calling the <code class="xref py py-class docutils literal notranslate"><span class="pre">DesignSpace</span></code> class and providing:
-* a list of input parameters (<code class="xref py py-attr docutils literal notranslate"><span class="pre">input_space</span></code>)
-* a list of output parameters (<code class="xref py py-attr docutils literal notranslate"><span class="pre">output_space</span></code>):</p>
+</section>
+<section id="creating-the-design-space">
+<h3>Creating the design space<a class="headerlink" href="#creating-the-design-space" title="Permalink to this heading"></a></h3>
+<p>The design space is then constructed by calling the <a class="reference internal" href="source/f3dasm.base.html#f3dasm.base.design.DesignSpace" title="f3dasm.base.design.DesignSpace"><code class="xref py py-class docutils literal notranslate"><span class="pre">DesignSpace</span></code></a> class and providing:
+* a list of input parameters (<a class="reference internal" href="source/f3dasm.base.html#f3dasm.base.design.DesignSpace.input_space" title="f3dasm.base.design.DesignSpace.input_space"><code class="xref py py-attr docutils literal notranslate"><span class="pre">input_space</span></code></a>)
+* a list of output parameters (<a class="reference internal" href="source/f3dasm.base.html#f3dasm.base.design.DesignSpace.output_space" title="f3dasm.base.design.DesignSpace.output_space"><code class="xref py py-attr docutils literal notranslate"><span class="pre">output_space</span></code></a>):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">design</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">DesignSpace</span><span class="p">(</span><span class="n">input_space</span><span class="o">=</span><span class="p">[</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span><span class="p">,</span> <span class="n">x4</span><span class="p">,</span> <span class="n">x5</span><span class="p">,</span> <span class="n">x6</span><span class="p">],</span> <span class="n">output_space</span><span class="o">=</span><span class="p">[</span><span class="n">y</span><span class="p">])</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="helper-function-for-single-objective-n-dimensional-continuous-design-spaces">
-<h3>Helper function for single-objective, n-dimensional continuous design spaces<a class="headerlink" href="#helper-function-for-single-objective-n-dimensional-continuous-design-spaces" title="Permalink to this headline"></a></h3>
-<p>We can make a n-dimensional continous, single-objective design space with the helper function <code class="xref py py-func docutils literal notranslate"><span class="pre">make_nd_continuous_design()</span></code>. We have to specify the boundaries for each of the dimensions with a numpy array:</p>
+</section>
+<section id="helper-function-for-single-objective-n-dimensional-continuous-design-spaces">
+<h3>Helper function for single-objective, n-dimensional continuous design spaces<a class="headerlink" href="#helper-function-for-single-objective-n-dimensional-continuous-design-spaces" title="Permalink to this heading"></a></h3>
+<p>We can make a n-dimensional continous, single-objective design space with the helper function <a class="reference internal" href="source/f3dasm.base.html#f3dasm.base.utils.make_nd_continuous_design" title="f3dasm.base.utils.make_nd_continuous_design"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_nd_continuous_design()</span></code></a>. We have to specify the boundaries for each of the dimensions with a numpy array:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bounds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]])</span>
 <span class="n">design</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">make_nd_continuous_design</span><span class="p">(</span><span class="n">bounds</span><span class="o">=</span><span class="n">bounds</span><span class="p">,</span> <span class="n">dimensions</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
