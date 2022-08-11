@@ -104,7 +104,7 @@
 <span class="n">design</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">make_nd_continuous_design</span><span class="p">(</span><span class="n">bounds</span><span class="o">=</span><span class="n">bounds</span><span class="p">,</span> <span class="n">dimensions</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Then we create an object of the <code class="xref py py-class docutils literal notranslate"><span class="pre">Sphere</span></code> class, specifying the <a class="reference internal" href="../source/f3dasm.base.html#f3dasm.base.function.Function.dimensionality" title="f3dasm.base.function.Function.dimensionality"><code class="xref py py-attr docutils literal notranslate"><span class="pre">dimensionality</span></code></a>:</p>
+<p>Then we create an object of the <a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Sphere" title="f3dasm.functions.pybenchfunction.Sphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sphere</span></code></a> class, specifying the <a class="reference internal" href="../source/f3dasm.base.html#f3dasm.base.function.Function.dimensionality" title="f3dasm.base.function.Function.dimensionality"><code class="xref py py-attr docutils literal notranslate"><span class="pre">dimensionality</span></code></a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sphere_function</span> <span class="o">=</span> <span class="n">f3dasm</span><span class="o">.</span><span class="n">functions</span><span class="o">.</span><span class="n">Sphere</span><span class="p">(</span><span class="n">dimensionality</span><span class="o">=</span><span class="n">dim</span><span class="p">,</span> <span class="n">scale_bounds</span><span class="o">=</span><span class="n">bounds</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -145,7 +145,7 @@
 </section>
 <section id="implemented-benchmark-functions">
 <h2>Implemented benchmark functions<a class="headerlink" href="#implemented-benchmark-functions" title="Permalink to this heading"></a></h2>
-<p>The following implementations of benchmark functions can found under the <code class="xref py py-mod docutils literal notranslate"><span class="pre">f3dasm.functions</span></code> module.
+<p>The following implementations of benchmark functions can found under the <a class="reference internal" href="../source/f3dasm.functions.html#module-f3dasm.functions" title="f3dasm.functions"><code class="xref py py-mod docutils literal notranslate"><span class="pre">f3dasm.functions</span></code></a> module.
 These are taken and modified from the <a class="reference external" href="https://github.com/AxelThevenot/Python_Benchmark_Test_Optimization_Function_Single_Objective">Python Benchmark Test Optimization Function Single Objective</a> github repository.</p>
 <section id="convex-functions">
 <h3>Convex functions<a class="headerlink" href="#convex-functions" title="Permalink to this heading"></a></h3>
@@ -161,73 +161,73 @@ These are taken and modified from the <a class="reference external" href="https:
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Ackley N. 2</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.AckleyN2</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.AckleyN2" title="f3dasm.functions.pybenchfunction.AckleyN2"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.AckleyN2</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Bohachevsky N. 1</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BohachevskyN1</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.BohachevskyN1" title="f3dasm.functions.pybenchfunction.BohachevskyN1"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BohachevskyN1</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Booth</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Booth</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Booth" title="f3dasm.functions.pybenchfunction.Booth"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Booth</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Brent</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Brent</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Brent" title="f3dasm.functions.pybenchfunction.Brent"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Brent</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Brown</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Brown</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Brown" title="f3dasm.functions.pybenchfunction.Brown"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Brown</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Bukin N. 6</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BukinN6</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.BukinN6" title="f3dasm.functions.pybenchfunction.BukinN6"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BukinN6</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Dixon Price</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.DixonPrice</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.DixonPrice" title="f3dasm.functions.pybenchfunction.DixonPrice"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.DixonPrice</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Exponential</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Exponential</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Exponential" title="f3dasm.functions.pybenchfunction.Exponential"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Exponential</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Matyas</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Matyas</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Matyas" title="f3dasm.functions.pybenchfunction.Matyas"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Matyas</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>McCormick</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.McCormick</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.McCormick" title="f3dasm.functions.pybenchfunction.McCormick"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.McCormick</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Perm 0, d, beta</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.PermZeroDBeta</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.PermZeroDBeta" title="f3dasm.functions.pybenchfunction.PermZeroDBeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.PermZeroDBeta</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Powell</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Powell</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Powell" title="f3dasm.functions.pybenchfunction.Powell"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Powell</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Rotated Hyper-Ellipsoid</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.RotatedHyperEllipsoid</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.RotatedHyperEllipsoid" title="f3dasm.functions.pybenchfunction.RotatedHyperEllipsoid"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.RotatedHyperEllipsoid</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Schwefel 2.20</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_20</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Schwefel2_20" title="f3dasm.functions.pybenchfunction.Schwefel2_20"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_20</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Schwefel 2.21</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_21</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Schwefel2_21" title="f3dasm.functions.pybenchfunction.Schwefel2_21"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_21</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Schwefel 2.22</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_22</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Schwefel2_22" title="f3dasm.functions.pybenchfunction.Schwefel2_22"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_22</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Schwefel 2.23</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_23</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Schwefel2_23" title="f3dasm.functions.pybenchfunction.Schwefel2_23"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_23</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Sphere</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Sphere</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Sphere" title="f3dasm.functions.pybenchfunction.Sphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Sphere</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Sum Squares</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.SumSquares</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.SumSquares" title="f3dasm.functions.pybenchfunction.SumSquares"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.SumSquares</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Thevenot</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Thevenot</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Thevenot" title="f3dasm.functions.pybenchfunction.Thevenot"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Thevenot</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Trid</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Trid</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Trid" title="f3dasm.functions.pybenchfunction.Trid"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Trid</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Xin She Yang N.3</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.XinSheYangN3</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.XinSheYangN3" title="f3dasm.functions.pybenchfunction.XinSheYangN3"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.XinSheYangN3</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Xin-She Yang N.4</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.XinSheYangN4</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.XinSheYangN4" title="f3dasm.functions.pybenchfunction.XinSheYangN4"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.XinSheYangN4</span></code></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -246,67 +246,67 @@ These are taken and modified from the <a class="reference external" href="https:
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Ackley</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Ackley</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Ackley" title="f3dasm.functions.pybenchfunction.Ackley"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Ackley</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Bohachevsky N. 1</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BohachevskyN1</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.BohachevskyN1" title="f3dasm.functions.pybenchfunction.BohachevskyN1"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BohachevskyN1</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Easom</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Easom</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Easom" title="f3dasm.functions.pybenchfunction.Easom"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Easom</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Egg Crate</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.EggCrate</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.EggCrate" title="f3dasm.functions.pybenchfunction.EggCrate"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.EggCrate</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Exponential</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Exponential</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Exponential" title="f3dasm.functions.pybenchfunction.Exponential"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Exponential</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Griewank</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Griewank</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Griewank" title="f3dasm.functions.pybenchfunction.Griewank"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Griewank</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Michalewicz</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Michalewicz</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Michalewicz" title="f3dasm.functions.pybenchfunction.Michalewicz"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Michalewicz</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Powell</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Powell</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Powell" title="f3dasm.functions.pybenchfunction.Powell"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Powell</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Qing</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Qing</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Qing" title="f3dasm.functions.pybenchfunction.Qing"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Qing</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Quartic</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Quartic</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Quartic" title="f3dasm.functions.pybenchfunction.Quartic"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Quartic</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Rastrigin</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Rastrigin</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Rastrigin" title="f3dasm.functions.pybenchfunction.Rastrigin"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Rastrigin</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Schwefel</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Schwefel" title="f3dasm.functions.pybenchfunction.Schwefel"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Schwefel 2.20</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_20</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Schwefel2_20" title="f3dasm.functions.pybenchfunction.Schwefel2_20"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_20</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Schwefel 2.21</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_21</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Schwefel2_21" title="f3dasm.functions.pybenchfunction.Schwefel2_21"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_21</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Schwefel 2.22</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_22</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Schwefel2_22" title="f3dasm.functions.pybenchfunction.Schwefel2_22"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_22</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Schwefel 2.23</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_23</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Schwefel2_23" title="f3dasm.functions.pybenchfunction.Schwefel2_23"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel2_23</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Sphere</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Sphere</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Sphere" title="f3dasm.functions.pybenchfunction.Sphere"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Sphere</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Styblinski Tank</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.StyblinskiTank</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.StyblinskiTank" title="f3dasm.functions.pybenchfunction.StyblinskiTank"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.StyblinskiTank</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Sum Squares</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.SumSquares</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.SumSquares" title="f3dasm.functions.pybenchfunction.SumSquares"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.SumSquares</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Thevenot</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Thevenot</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Thevenot" title="f3dasm.functions.pybenchfunction.Thevenot"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Thevenot</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Xin She Yang</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.XinSheYang</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.XinSheYang" title="f3dasm.functions.pybenchfunction.XinSheYang"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.XinSheYang</span></code></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -325,181 +325,181 @@ These are taken and modified from the <a class="reference external" href="https:
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Ackley</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Ackley</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Ackley" title="f3dasm.functions.pybenchfunction.Ackley"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Ackley</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Ackley N. 2</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.AckleyN2</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.AckleyN2" title="f3dasm.functions.pybenchfunction.AckleyN2"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.AckleyN2</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Ackley N. 3</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.AckleyN3</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.AckleyN3" title="f3dasm.functions.pybenchfunction.AckleyN3"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.AckleyN3</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Ackley N. 4</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.AckleyN4</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.AckleyN4" title="f3dasm.functions.pybenchfunction.AckleyN4"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.AckleyN4</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Adjiman</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Adjiman</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Adjiman" title="f3dasm.functions.pybenchfunction.Adjiman"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Adjiman</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Beale</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Beale</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Beale" title="f3dasm.functions.pybenchfunction.Beale"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Beale</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Bird</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Bird</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Bird" title="f3dasm.functions.pybenchfunction.Bird"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Bird</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Bohachevsky N. 1</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BohachevskyN1</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.BohachevskyN1" title="f3dasm.functions.pybenchfunction.BohachevskyN1"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BohachevskyN1</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Bohachevsky N. 2</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BohachevskyN2</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.BohachevskyN2" title="f3dasm.functions.pybenchfunction.BohachevskyN2"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BohachevskyN2</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Bohachevsky N. 3</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BohachevskyN3</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.BohachevskyN3" title="f3dasm.functions.pybenchfunction.BohachevskyN3"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BohachevskyN3</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Booth</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Booth</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Booth" title="f3dasm.functions.pybenchfunction.Booth"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Booth</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Branin</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Branin</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Branin" title="f3dasm.functions.pybenchfunction.Branin"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Branin</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Brent</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Brent</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Brent" title="f3dasm.functions.pybenchfunction.Brent"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Brent</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Brown</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Brown</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Brown" title="f3dasm.functions.pybenchfunction.Brown"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Brown</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Colville</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Colville</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Colville" title="f3dasm.functions.pybenchfunction.Colville"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Colville</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>De Jong N. 5</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.DeJongN5</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.DeJongN5" title="f3dasm.functions.pybenchfunction.DeJongN5"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.DeJongN5</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Deckkers-Aarts</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.DeckkersAarts</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.DeckkersAarts" title="f3dasm.functions.pybenchfunction.DeckkersAarts"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.DeckkersAarts</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Dixon Price</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.DixonPrice</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.DixonPrice" title="f3dasm.functions.pybenchfunction.DixonPrice"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.DixonPrice</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Drop-Wave</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.DropWave</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.DropWave" title="f3dasm.functions.pybenchfunction.DropWave"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.DropWave</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Easom</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Easom</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Easom" title="f3dasm.functions.pybenchfunction.Easom"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Easom</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Egg Crate</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.EggCrate</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.EggCrate" title="f3dasm.functions.pybenchfunction.EggCrate"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.EggCrate</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Egg Holder</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.EggHolder</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.EggHolder" title="f3dasm.functions.pybenchfunction.EggHolder"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.EggHolder</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Exponential</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Exponential</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Exponential" title="f3dasm.functions.pybenchfunction.Exponential"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Exponential</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Goldstein-Price</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.GoldsteinPrice</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.GoldsteinPrice" title="f3dasm.functions.pybenchfunction.GoldsteinPrice"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.GoldsteinPrice</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Griewank</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Griewank</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Griewank" title="f3dasm.functions.pybenchfunction.Griewank"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Griewank</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Happy Cat</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.HappyCat</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.HappyCat" title="f3dasm.functions.pybenchfunction.HappyCat"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.HappyCat</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Himmelblau</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Himmelblau</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Himmelblau" title="f3dasm.functions.pybenchfunction.Himmelblau"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Himmelblau</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Keane</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Keane</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Keane" title="f3dasm.functions.pybenchfunction.Keane"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Keane</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Langermann</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Langermann</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Langermann" title="f3dasm.functions.pybenchfunction.Langermann"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Langermann</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Leon</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Leon</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Leon" title="f3dasm.functions.pybenchfunction.Leon"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Leon</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Levy</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Levy</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Levy" title="f3dasm.functions.pybenchfunction.Levy"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Levy</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Levy N. 13</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.LevyN13</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.LevyN13" title="f3dasm.functions.pybenchfunction.LevyN13"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.LevyN13</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Matyas</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Matyas</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Matyas" title="f3dasm.functions.pybenchfunction.Matyas"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Matyas</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>McCormick</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.McCormick</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.McCormick" title="f3dasm.functions.pybenchfunction.McCormick"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.McCormick</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Michalewicz</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Michalewicz</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Michalewicz" title="f3dasm.functions.pybenchfunction.Michalewicz"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Michalewicz</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Periodic</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Periodic</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Periodic" title="f3dasm.functions.pybenchfunction.Periodic"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Periodic</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Perm d, beta</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.PermDBeta</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.PermDBeta" title="f3dasm.functions.pybenchfunction.PermDBeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.PermDBeta</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Perm 0, d, beta</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.PermZeroDBeta</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.PermZeroDBeta" title="f3dasm.functions.pybenchfunction.PermZeroDBeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.PermZeroDBeta</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Qing</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Qing</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Qing" title="f3dasm.functions.pybenchfunction.Qing"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Qing</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Quartic</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Quartic</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Quartic" title="f3dasm.functions.pybenchfunction.Quartic"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Quartic</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Rastrigin</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Rastrigin</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Rastrigin" title="f3dasm.functions.pybenchfunction.Rastrigin"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Rastrigin</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Ridge</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Ridge</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Ridge" title="f3dasm.functions.pybenchfunction.Ridge"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Ridge</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Rosenbrock</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Rosenbrock</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Rosenbrock" title="f3dasm.functions.pybenchfunction.Rosenbrock"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Rosenbrock</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Rotated Hyper-Ellipsoid</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.RotatedHyperEllipsoid</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.RotatedHyperEllipsoid" title="f3dasm.functions.pybenchfunction.RotatedHyperEllipsoid"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.RotatedHyperEllipsoid</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Salomon</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Salomon</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Salomon" title="f3dasm.functions.pybenchfunction.Salomon"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Salomon</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Schaffel N. 1</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.SchaffelN1</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.SchaffelN1" title="f3dasm.functions.pybenchfunction.SchaffelN1"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.SchaffelN1</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Schaffel N. 2</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.SchaffelN2</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.SchaffelN2" title="f3dasm.functions.pybenchfunction.SchaffelN2"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.SchaffelN2</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Schaffel N. 3</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.SchaffelN3</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.SchaffelN3" title="f3dasm.functions.pybenchfunction.SchaffelN3"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.SchaffelN3</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Schaffel N. 4</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.SchaffelN4</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.SchaffelN4" title="f3dasm.functions.pybenchfunction.SchaffelN4"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.SchaffelN4</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Shekel</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Shekel</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Shekel" title="f3dasm.functions.pybenchfunction.Shekel"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Shekel</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Shubert</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Shubert</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Shubert" title="f3dasm.functions.pybenchfunction.Shubert"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Shubert</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Shubert N. 3</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.ShubertN3</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.ShubertN3" title="f3dasm.functions.pybenchfunction.ShubertN3"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.ShubertN3</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Shubert N. 4</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.ShubertN4</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.ShubertN4" title="f3dasm.functions.pybenchfunction.ShubertN4"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.ShubertN4</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Styblinski Tank</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.StyblinskiTank</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.StyblinskiTank" title="f3dasm.functions.pybenchfunction.StyblinskiTank"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.StyblinskiTank</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Sum Squares</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.SumSquares</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.SumSquares" title="f3dasm.functions.pybenchfunction.SumSquares"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.SumSquares</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Thevenot</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Thevenot</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Thevenot" title="f3dasm.functions.pybenchfunction.Thevenot"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Thevenot</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Three-Hump</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.ThreeHump</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.ThreeHump" title="f3dasm.functions.pybenchfunction.ThreeHump"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.ThreeHump</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Trid</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Trid</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Trid" title="f3dasm.functions.pybenchfunction.Trid"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Trid</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Xin She Yang N.3</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.XinSheYangN3</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.XinSheYangN3" title="f3dasm.functions.pybenchfunction.XinSheYangN3"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.XinSheYangN3</span></code></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -518,136 +518,136 @@ These are taken and modified from the <a class="reference external" href="https:
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Ackley</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Ackley</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Ackley" title="f3dasm.functions.pybenchfunction.Ackley"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Ackley</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Ackley N. 3</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.AckleyN3</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.AckleyN3" title="f3dasm.functions.pybenchfunction.AckleyN3"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.AckleyN3</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Ackley N. 4</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.AckleyN4</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.AckleyN4" title="f3dasm.functions.pybenchfunction.AckleyN4"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.AckleyN4</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Adjiman</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Adjiman</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Adjiman" title="f3dasm.functions.pybenchfunction.Adjiman"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Adjiman</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Bartels</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Bartels</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Bartels" title="f3dasm.functions.pybenchfunction.Bartels"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Bartels</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Beale</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Beale</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Beale" title="f3dasm.functions.pybenchfunction.Beale"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Beale</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Bird</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Bird</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Bird" title="f3dasm.functions.pybenchfunction.Bird"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Bird</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Bohachevsky N. 2</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BohachevskyN2</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.BohachevskyN2" title="f3dasm.functions.pybenchfunction.BohachevskyN2"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BohachevskyN2</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Bohachevsky N. 3</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BohachevskyN3</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.BohachevskyN3" title="f3dasm.functions.pybenchfunction.BohachevskyN3"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BohachevskyN3</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Branin</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Branin</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Branin" title="f3dasm.functions.pybenchfunction.Branin"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Branin</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Bukin N. 6</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BukinN6</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.BukinN6" title="f3dasm.functions.pybenchfunction.BukinN6"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.BukinN6</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Colville</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Colville</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Colville" title="f3dasm.functions.pybenchfunction.Colville"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Colville</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Cross-in-Tray</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.CrossInTray</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.CrossInTray" title="f3dasm.functions.pybenchfunction.CrossInTray"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.CrossInTray</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>De Jong N. 5</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.DeJongN5</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.DeJongN5" title="f3dasm.functions.pybenchfunction.DeJongN5"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.DeJongN5</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Deckkers-Aarts</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.DeckkersAarts</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.DeckkersAarts" title="f3dasm.functions.pybenchfunction.DeckkersAarts"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.DeckkersAarts</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Easom</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Easom</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Easom" title="f3dasm.functions.pybenchfunction.Easom"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Easom</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Egg Crate</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.EggCrate</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.EggCrate" title="f3dasm.functions.pybenchfunction.EggCrate"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.EggCrate</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Egg Holder</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.EggHolder</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.EggHolder" title="f3dasm.functions.pybenchfunction.EggHolder"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.EggHolder</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Goldstein-Price</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.GoldsteinPrice</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.GoldsteinPrice" title="f3dasm.functions.pybenchfunction.GoldsteinPrice"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.GoldsteinPrice</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Happy Cat</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.HappyCat</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.HappyCat" title="f3dasm.functions.pybenchfunction.HappyCat"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.HappyCat</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Himmelblau</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Himmelblau</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Himmelblau" title="f3dasm.functions.pybenchfunction.Himmelblau"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Himmelblau</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Holder-Table</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.HolderTable</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.HolderTable" title="f3dasm.functions.pybenchfunction.HolderTable"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.HolderTable</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Keane</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Keane</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Keane" title="f3dasm.functions.pybenchfunction.Keane"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Keane</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Langermann</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Langermann</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Langermann" title="f3dasm.functions.pybenchfunction.Langermann"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Langermann</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Levy</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Levy</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Levy" title="f3dasm.functions.pybenchfunction.Levy"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Levy</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Levy N. 13</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.LevyN13</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.LevyN13" title="f3dasm.functions.pybenchfunction.LevyN13"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.LevyN13</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>McCormick</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.McCormick</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.McCormick" title="f3dasm.functions.pybenchfunction.McCormick"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.McCormick</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Michalewicz</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Michalewicz</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Michalewicz" title="f3dasm.functions.pybenchfunction.Michalewicz"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Michalewicz</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Periodic</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Periodic</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Periodic" title="f3dasm.functions.pybenchfunction.Periodic"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Periodic</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Perm d, beta</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.PermDBeta</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.PermDBeta" title="f3dasm.functions.pybenchfunction.PermDBeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.PermDBeta</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Qing</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Qing</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Qing" title="f3dasm.functions.pybenchfunction.Qing"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Qing</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Quartic</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Quartic</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Quartic" title="f3dasm.functions.pybenchfunction.Quartic"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Quartic</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Rastrigin</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Rastrigin</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Rastrigin" title="f3dasm.functions.pybenchfunction.Rastrigin"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Rastrigin</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Rosenbrock</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Rosenbrock</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Rosenbrock" title="f3dasm.functions.pybenchfunction.Rosenbrock"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Rosenbrock</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Salomon</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Salomon</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Salomon" title="f3dasm.functions.pybenchfunction.Salomon"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Salomon</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Schwefel</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Schwefel" title="f3dasm.functions.pybenchfunction.Schwefel"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Schwefel</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Shekel</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Shekel</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Shekel" title="f3dasm.functions.pybenchfunction.Shekel"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Shekel</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Shubert</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Shubert</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Shubert" title="f3dasm.functions.pybenchfunction.Shubert"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Shubert</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Shubert N. 3</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.ShubertN3</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.ShubertN3" title="f3dasm.functions.pybenchfunction.ShubertN3"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.ShubertN3</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Shubert N. 4</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.ShubertN4</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.ShubertN4" title="f3dasm.functions.pybenchfunction.ShubertN4"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.ShubertN4</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Styblinski Tank</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.StyblinskiTank</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.StyblinskiTank" title="f3dasm.functions.pybenchfunction.StyblinskiTank"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.StyblinskiTank</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Thevenot</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Thevenot</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Thevenot" title="f3dasm.functions.pybenchfunction.Thevenot"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Thevenot</span></code></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Xin She Yang</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.XinSheYang</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.XinSheYang" title="f3dasm.functions.pybenchfunction.XinSheYang"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.XinSheYang</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Xin She Yang N.2</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.XinSheYangN2</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.XinSheYangN2" title="f3dasm.functions.pybenchfunction.XinSheYangN2"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.XinSheYangN2</span></code></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -666,10 +666,10 @@ These are taken and modified from the <a class="reference external" href="https:
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Quartic</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Quartic</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.Quartic" title="f3dasm.functions.pybenchfunction.Quartic"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.Quartic</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Xin She Yang</p></td>
-<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.XinSheYang</span></code></p></td>
+<td><p><a class="reference internal" href="../source/f3dasm.functions.html#f3dasm.functions.pybenchfunction.XinSheYang" title="f3dasm.functions.pybenchfunction.XinSheYang"><code class="xref py py-class docutils literal notranslate"><span class="pre">f3dasm.functions.pybenchfunction.XinSheYang</span></code></a></p></td>
 </tr>
 </tbody>
 </table>

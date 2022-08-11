@@ -93,23 +93,23 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="f3dasm.functions.html">f3dasm.functions package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="f3dasm.functions.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="f3dasm.functions.html#f3dasm-functions-pybenchfunction-module">f3dasm.functions.pybenchfunction module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="f3dasm.functions.html#module-contents">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f3dasm.functions.html#module-f3dasm.functions.pybenchfunction">f3dasm.functions.pybenchfunction module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f3dasm.functions.html#module-f3dasm.functions">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="f3dasm.optimization.html">f3dasm.optimization package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="f3dasm.optimization.html#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="f3dasm.optimization.html#module-f3dasm.optimization.gpyopt_implementations">f3dasm.optimization.gpyopt_implementations module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="f3dasm.optimization.html#module-f3dasm.optimization.gradient_based_algorithms">f3dasm.optimization.gradient_based_algorithms module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="f3dasm.optimization.html#f3dasm-optimization-pygmo-implementations-module">f3dasm.optimization.pygmo_implementations module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="f3dasm.optimization.html#f3dasm-optimization-scipy-implementations-module">f3dasm.optimization.scipy_implementations module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="f3dasm.optimization.html#module-contents">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f3dasm.optimization.html#module-f3dasm.optimization.pygmo_implementations">f3dasm.optimization.pygmo_implementations module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f3dasm.optimization.html#module-f3dasm.optimization.scipy_implementations">f3dasm.optimization.scipy_implementations module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f3dasm.optimization.html#module-f3dasm.optimization">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="f3dasm.sampling.html">f3dasm.sampling package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="f3dasm.sampling.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="f3dasm.sampling.html#f3dasm-sampling-samplers-module">f3dasm.sampling.samplers module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="f3dasm.sampling.html#module-contents">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f3dasm.sampling.html#module-f3dasm.sampling.samplers">f3dasm.sampling.samplers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f3dasm.sampling.html#module-f3dasm.sampling">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -118,11 +118,27 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
 </section>
-<section id="f3dasm-run-optimization-module">
-<h2>f3dasm.run_optimization module<a class="headerlink" href="#f3dasm-run-optimization-module" title="Permalink to this heading"></a></h2>
+<section id="module-f3dasm.run_optimization">
+<span id="f3dasm-run-optimization-module"></span><h2>f3dasm.run_optimization module<a class="headerlink" href="#module-f3dasm.run_optimization" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="f3dasm.run_optimization.run_multiple_realizations">
+<span class="sig-prename descclassname"><span class="pre">f3dasm.run_optimization.</span></span><span class="sig-name descname"><span class="pre">run_multiple_realizations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">optimizer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="f3dasm.base.html#f3dasm.base.optimization.Optimizer" title="f3dasm.base.optimization.Optimizer"><span class="pre">Optimizer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="f3dasm.base.html#f3dasm.base.function.Function" title="f3dasm.base.function.Function"><span class="pre">Function</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">sampler</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="f3dasm.base.html#f3dasm.base.samplingmethod.SamplingInterface" title="f3dasm.base.samplingmethod.SamplingInterface"><span class="pre">SamplingInterface</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">iterations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">realizations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="f3dasm.base.html#f3dasm.base.data.Data" title="f3dasm.base.data.Data"><span class="pre">Data</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#f3dasm.run_optimization.run_multiple_realizations" title="Permalink to this definition"></a></dt>
+<dd><p>Run multiple realizations of the same algorithm on a benchmark function</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f3dasm.run_optimization.run_optimization">
+<span class="sig-prename descclassname"><span class="pre">f3dasm.run_optimization.</span></span><span class="sig-name descname"><span class="pre">run_optimization</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">optimizer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="f3dasm.base.html#f3dasm.base.optimization.Optimizer" title="f3dasm.base.optimization.Optimizer"><span class="pre">Optimizer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="f3dasm.base.html#f3dasm.base.function.Function" title="f3dasm.base.function.Function"><span class="pre">Function</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">sampler</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="f3dasm.base.html#f3dasm.base.samplingmethod.SamplingInterface" title="f3dasm.base.samplingmethod.SamplingInterface"><span class="pre">SamplingInterface</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">iterations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="f3dasm.base.html#f3dasm.base.data.Data" title="f3dasm.base.data.Data"><span class="pre">Data</span></a></span></span><a class="headerlink" href="#f3dasm.run_optimization.run_optimization" title="Permalink to this definition"></a></dt>
+<dd><p>Run optimization on some benchmark function</p>
+</dd></dl>
+
 </section>
-<section id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this heading"></a></h2>
+<section id="module-f3dasm">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-f3dasm" title="Permalink to this heading"></a></h2>
+<section id="f3dasm">
+<h3>F3DASM<a class="headerlink" href="#f3dasm" title="Permalink to this heading"></a></h3>
+<p>This is the initalizer of the F3DASM package</p>
+</section>
 </section>
 </section>
 
