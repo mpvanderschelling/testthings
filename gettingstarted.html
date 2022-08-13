@@ -82,9 +82,8 @@
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading"></a></h1>
 <section id="install-from-source">
 <h2>Install from source<a class="headerlink" href="#install-from-source" title="Permalink to this heading"></a></h2>
-<p>Download <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html#linux-installers">Miniconda</a> and add <code class="code docutils literal notranslate"><span class="pre">conda-forge</span></code> to the channels and set the priority to strict:</p>
+<p>Download <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html#linux-installers">Miniconda</a> and add <code class="code docutils literal notranslate"><span class="pre">conda-forge</span></code> to the channels:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda config --add channels conda-forge
-<span class="gp">$ </span>conda config --set channel_priority strict
 </pre></div>
 </div>
 <p>Clone from the GitHub repository</p>
@@ -101,7 +100,7 @@
 <span class="gp">$ </span>make test-smoke
 </pre></div>
 </div>
-<p>If the tests pass the installation is successful!
+<p>If the smoke tests pass the installation is successful!
 Now install the package in editable mode:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install -e .
 </pre></div>
@@ -111,6 +110,7 @@ Now install the package in editable mode:</p>
 <span class="go">&gt;&gt;&gt; import f3dasm</span>
 </pre></div>
 </div>
+<p>If no errors occur when importing the package, then you have succesfully installed the <code class="code docutils literal notranslate"><span class="pre">f3dasm</span></code> package!</p>
 </section>
 </section>
 
