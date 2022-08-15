@@ -46,7 +46,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../capabilities/algorithms.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../capabilities/functions.html">Benchmark functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../capabilities/samplers.html">Samplers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../space.html">Design space</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../capabilities/space.html">Design space</a></li>
 </ul>
 
         </div>
@@ -635,7 +635,7 @@ Requires seaborn to be installed.</p>
 <span id="f3dasm-base-optimization-module"></span><h2>f3dasm.base.optimization module<a class="headerlink" href="#module-f3dasm.base.optimization" title="Permalink to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.base.optimization.</span></span><span class="sig-name descname"><span class="pre">Optimizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data:</span> <span class="pre">~f3dasm.base.data.Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hyperparameters:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">44269</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaults:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.base.optimization.Optimizer" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f3dasm.base.optimization.</span></span><span class="sig-name descname"><span class="pre">Optimizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data:</span> <span class="pre">~f3dasm.base.data.Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hyperparameters:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">14092</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaults:</span> <span class="pre">~typing.Optional[~typing.Mapping[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f3dasm.base.optimization.Optimizer" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Mainclass to inherit from to implement optimization algorithms</p>
 <dl class="field-list simple">
@@ -696,30 +696,13 @@ Requires seaborn to be installed.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.seed">
-<span class="sig-name descname"><span class="pre">seed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">44269</span></em><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.seed" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">seed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14092</span></em><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.seed" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.set_algorithm">
 <span class="sig-name descname"><span class="pre">set_algorithm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.set_algorithm" title="Permalink to this definition"></a></dt>
 <dd><p>If necessary, the algorithm needs to be set</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.set_data">
-<span class="sig-name descname"><span class="pre">set_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#f3dasm.base.data.Data" title="f3dasm.base.data.Data"><span class="pre">Data</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.set_data" title="Permalink to this definition"></a></dt>
-<dd><p>Set the data attribute</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>data</strong> (<em>Data</em>) – Data object</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="f3dasm.base.optimization.Optimizer.set_hyperparameters">
-<span class="sig-name descname"><span class="pre">set_hyperparameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#f3dasm.base.optimization.Optimizer.set_hyperparameters" title="Permalink to this definition"></a></dt>
-<dd><p>Overwrite the default hyperparameters by the given ones</p>
 </dd></dl>
 
 <dl class="py method">
